@@ -1,0 +1,17 @@
+It's possible to make ROS service requests into Gazebo:
+
+On terminal A, start the service bridge:
+
+ros2 run ros_gz_bridge parameter_bridge /world/shapes/control@ros_gz_interfaces/srv/ControlWorld
+
+On terminal B, start Gazebo, it will be paused by default:
+
+ign gazebo shapes.sdf
+
+On terminal C, make a ROS request to unpause simulation:
+
+ros2 service call /world/<world_name>/control ros_gz_interfaces/srv/ControlWorld "{world_control: {pause: false}}"
+
+Or reset the world:
+
+ros2 service call /world/<world_name>/control ros_gz_interfaces/srv/ControlWorld "{world_control: {reset: {all: true}}}"

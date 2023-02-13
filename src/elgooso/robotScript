@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo -e "World file name:"
+read world
+
+echo "Robot (urdf) file name:"
+read robot
+
+ign service -s /world/$world/create --reqtype ignition.msgs.EntityFactory --reptype ignition.msgs.Boolean --timeout 1000 --req 'sdf_filename: "/home/majama/ros2_ws/src/elgooso/urdf/'$robot.urdf'", name: "'$robot'"'

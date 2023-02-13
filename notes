@@ -1,0 +1,24 @@
+THINGS TO LEARN:
+basic understanding of machine learning
+how to put ROS onto my pico. I might be able to find projects like that on github. 
+
+ADVANCED:
+-Design a new robot with a specific purpose, model it in sim, fabricate parts, assemble it, and make it work. Might need a 3d printer? print parts? 
+Maybe not a bad idea to focus on simulated robots? get good at simulation and coding? Then when you have more resources you can do things IRL.
+
+-two cameras so that AI can learn depth perception
+
+-procedurally generated training world for navigating a road with obstacles, walking stairs or uneven terrain, jumping over uneven gaps at uneven heights.
+
+RESOURCES:
+linkedIn informational interviews
+Taylor
+github
+research papers -JSTOR, google scholar
+MIT opencourse
+NOVA
+ 
+
+NEXT STEPS:
+put on github
+make an AI model in which elgooso learns to avoid obstacles. objective: get to the end. reward pos x distance traveled. punish cumulative -x distance traveled. punish collisions. allow control of right wheel pair, left wheel pair, servo, sensor. write model into ros. 

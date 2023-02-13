@@ -1,0 +1,6 @@
+source;share/elgooso/hook/pythonpath.ps1
+source;share/elgooso/hook/pythonpath.dsv
+source;share/elgooso/hook/pythonpath.sh
+source;share/elgooso/hook/ament_prefix_path.ps1
+source;share/elgooso/hook/ament_prefix_path.dsv
+source;share/elgooso/hook/ament_prefix_path.sh

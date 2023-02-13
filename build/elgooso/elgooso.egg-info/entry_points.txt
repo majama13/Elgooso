@@ -1,0 +1,7 @@
+[console_scripts]
+Qlearn = elgooso.Qlearn:main
+move = elgooso.move:main
+spawn_entity = elgooso.spawn_entity:main
+state_publisher = elgooso.state_publisher:main
+talker = elgooso.publisher_member_function:main
+

@@ -1,0 +1,33 @@
+running develop
+Removing /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso.egg-link (link to .)
+running egg_info
+writing ../../build/elgooso/elgooso.egg-info/PKG-INFO
+writing dependency_links to ../../build/elgooso/elgooso.egg-info/dependency_links.txt
+writing entry points to ../../build/elgooso/elgooso.egg-info/entry_points.txt
+writing requirements to ../../build/elgooso/elgooso.egg-info/requires.txt
+writing top-level names to ../../build/elgooso/elgooso.egg-info/top_level.txt
+reading manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+writing manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+running build
+running build_py
+copying elgooso/move.py -> /home/majama/ros2_ws/build/elgooso/build/lib/elgooso
+running install
+running install_lib
+creating /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/move.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/state_publisher.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/publisher_member_function.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/__init__.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/move.py to move.cpython-310.pyc
+byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/state_publisher.py to state_publisher.cpython-310.pyc
+byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying launch/elgooso_sim.launch.py -> /home/majama/ros2_ws/install/elgooso/share/elgooso/launch
+running install_egg_info
+Copying ../../build/elgooso/elgooso.egg-info to /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info
+running install_scripts
+Installing move script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+Installing talker script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+writing list of installed files to '/home/majama/ros2_ws/build/elgooso/install.log'

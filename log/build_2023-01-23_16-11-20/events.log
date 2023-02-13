@@ -1,0 +1,82 @@
+[0.000000] (-) TimerEvent: {}
+[0.000505] (elgooso) JobQueued: {'identifier': 'elgooso', 'dependencies': OrderedDict()}
+[0.000794] (elgooso) JobStarted: {'identifier': 'elgooso'}
+[0.097603] (-) TimerEvent: {}
+[0.198156] (-) TimerEvent: {}
+[0.298902] (-) TimerEvent: {}
+[0.399429] (-) TimerEvent: {}
+[0.500046] (-) TimerEvent: {}
+[0.600679] (-) TimerEvent: {}
+[0.701209] (-) TimerEvent: {}
+[0.801693] (-) TimerEvent: {}
+[0.902383] (-) TimerEvent: {}
+[1.003074] (-) TimerEvent: {}
+[1.103683] (-) TimerEvent: {}
+[1.204213] (-) TimerEvent: {}
+[1.304789] (-) TimerEvent: {}
+[1.345643] (elgooso) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--uninstall', '--editable', '--build-directory', '/home/majama/ros2_ws/build/elgooso/build'], 'cwd': '/home/majama/ros2_ws/build/elgooso', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'majama', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/majama', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5094', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'PICO_TOOLCHAIN_PATH': '...', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'majama', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'majama', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Matrix:@/tmp/.ICE-unix/1719,unix/Matrix:/tmp/.ICE-unix/1719', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/81d69b39_747a_42af_b5d7_4a30961d0ff5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.B3QXY1', 'LS_COLORS': 'rs=0:di=01;93:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/majama/ros2_ws/build/elgooso', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PICO_SDK_PATH': '/home/majama/micro_ros_ws/src/pico-sdk', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[1.405790] (-) TimerEvent: {}
+[1.506316] (-) TimerEvent: {}
+[1.606987] (-) TimerEvent: {}
+[1.707534] (-) TimerEvent: {}
+[1.808113] (-) TimerEvent: {}
+[1.808770] (elgooso) StdoutLine: {'line': b'running develop\n'}
+[1.810488] (elgooso) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.810891] (elgooso) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.814780] (elgooso) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.815199] (elgooso) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.900084] (elgooso) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release\n'}
+[1.900504] (elgooso) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.901086] (elgooso) StderrLine: {'line': b'/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release\n'}
+[1.901419] (elgooso) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.908266] (-) TimerEvent: {}
+[2.008731] (-) TimerEvent: {}
+[2.109302] (-) TimerEvent: {}
+[2.159169] (elgooso) CommandEnded: {'returncode': 0}
+[2.159967] (elgooso) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/elgooso', 'build', '--build-base', '/home/majama/ros2_ws/build/elgooso/build', 'install', '--record', '/home/majama/ros2_ws/build/elgooso/install.log', '--single-version-externally-managed'], 'cwd': '/home/majama/ros2_ws/src/elgooso', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'majama', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/majama', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '5094', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'PICO_TOOLCHAIN_PATH': '...', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'majama', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'majama', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/Matrix:@/tmp/.ICE-unix/1719,unix/Matrix:/tmp/.ICE-unix/1719', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/81d69b39_747a_42af_b5d7_4a30961d0ff5', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.B3QXY1', 'LS_COLORS': 'rs=0:di=01;93:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.130', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/majama/ros2_ws/build/elgooso', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'PICO_SDK_PATH': '/home/majama/micro_ros_ws/src/pico-sdk', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[2.209542] (-) TimerEvent: {}
+[2.310427] (-) TimerEvent: {}
+[2.411372] (-) TimerEvent: {}
+[2.512156] (-) TimerEvent: {}
+[2.612687] (-) TimerEvent: {}
+[2.654257] (elgooso) StdoutLine: {'line': b'running egg_info\n'}
+[2.655827] (elgooso) StdoutLine: {'line': b'writing ../../build/elgooso/elgooso.egg-info/PKG-INFO\n'}
+[2.656936] (elgooso) StdoutLine: {'line': b'writing dependency_links to ../../build/elgooso/elgooso.egg-info/dependency_links.txt\n'}
+[2.657361] (elgooso) StdoutLine: {'line': b'writing entry points to ../../build/elgooso/elgooso.egg-info/entry_points.txt\n'}
+[2.657922] (elgooso) StdoutLine: {'line': b'writing requirements to ../../build/elgooso/elgooso.egg-info/requires.txt\n'}
+[2.658866] (elgooso) StdoutLine: {'line': b'writing top-level names to ../../build/elgooso/elgooso.egg-info/top_level.txt\n'}
+[2.669669] (elgooso) StdoutLine: {'line': b"reading manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'\n"}
+[2.671607] (elgooso) StdoutLine: {'line': b"writing manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'\n"}
+[2.672065] (elgooso) StdoutLine: {'line': b'running build\n'}
+[2.672223] (elgooso) StdoutLine: {'line': b'running build_py\n'}
+[2.673577] (elgooso) StdoutLine: {'line': b'copying elgooso/Qlearn.py -> /home/majama/ros2_ws/build/elgooso/build/lib/elgooso\n'}
+[2.677428] (elgooso) StdoutLine: {'line': b'running install\n'}
+[2.677979] (elgooso) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[2.678152] (elgooso) StderrLine: {'line': b'  warnings.warn(\n'}
+[2.678361] (elgooso) StdoutLine: {'line': b'running install_lib\n'}
+[2.681478] (elgooso) StdoutLine: {'line': b'copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/Qlearn.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso\n'}
+[2.683671] (elgooso) StdoutLine: {'line': b'byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/Qlearn.py to Qlearn.cpython-310.pyc\n'}
+[2.686532] (elgooso) StderrLine: {'line': b'  File "/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/Qlearn.py", line 111\n'}
+[2.687159] (elgooso) StderrLine: {'line': b'    \t\tif state = TERMINAL:\n'}
+[2.687360] (elgooso) StderrLine: {'line': b'    \t\t   ^^^^^^^^^^^^^^^^\n'}
+[2.687578] (elgooso) StderrLine: {'line': b"SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?\n"}
+[2.687713] (elgooso) StderrLine: {'line': b'\n'}
+[2.687862] (elgooso) StdoutLine: {'line': b'running install_data\n'}
+[2.694515] (elgooso) StdoutLine: {'line': b'copying worlds/generate_straight_obstacle_course.py -> /home/majama/ros2_ws/install/elgooso/share/elgooso/worlds\n'}
+[2.695293] (elgooso) StdoutLine: {'line': b'copying worlds/world_demo.sdf -> /home/majama/ros2_ws/install/elgooso/share/elgooso/worlds\n'}
+[2.695787] (elgooso) StdoutLine: {'line': b'copying worlds/world_demo.xacro -> /home/majama/ros2_ws/install/elgooso/share/elgooso/worlds\n'}
+[2.696104] (elgooso) StdoutLine: {'line': b'running install_egg_info\n'}
+[2.700216] (elgooso) StdoutLine: {'line': b"removing '/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[2.701235] (elgooso) StdoutLine: {'line': b'Copying ../../build/elgooso/elgooso.egg-info to /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info\n'}
+[2.703013] (elgooso) StdoutLine: {'line': b'running install_scripts\n'}
+[2.712839] (-) TimerEvent: {}
+[2.754239] (elgooso) StdoutLine: {'line': b'Installing Qlearn script to /home/majama/ros2_ws/install/elgooso/lib/elgooso\n'}
+[2.754773] (elgooso) StdoutLine: {'line': b'Installing move script to /home/majama/ros2_ws/install/elgooso/lib/elgooso\n'}
+[2.755455] (elgooso) StdoutLine: {'line': b'Installing spawn_entity script to /home/majama/ros2_ws/install/elgooso/lib/elgooso\n'}
+[2.755878] (elgooso) StdoutLine: {'line': b'Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso\n'}
+[2.756215] (elgooso) StdoutLine: {'line': b'Installing talker script to /home/majama/ros2_ws/install/elgooso/lib/elgooso\n'}
+[2.757317] (elgooso) StdoutLine: {'line': b"writing list of installed files to '/home/majama/ros2_ws/build/elgooso/install.log'\n"}
+[2.812936] (-) TimerEvent: {}
+[2.815930] (elgooso) CommandEnded: {'returncode': 0}
+[2.867988] (elgooso) JobEnded: {'identifier': 'elgooso', 'rc': 0}
+[2.873746] (-) EventReactorShutdown: {}

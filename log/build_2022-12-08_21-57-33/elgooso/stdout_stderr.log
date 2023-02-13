@@ -1,0 +1,35 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+/usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+  warnings.warn(
+running egg_info
+writing ../../build/elgooso/elgooso.egg-info/PKG-INFO
+writing dependency_links to ../../build/elgooso/elgooso.egg-info/dependency_links.txt
+writing entry points to ../../build/elgooso/elgooso.egg-info/entry_points.txt
+writing requirements to ../../build/elgooso/elgooso.egg-info/requires.txt
+writing top-level names to ../../build/elgooso/elgooso.egg-info/top_level.txt
+reading manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+writing manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+running build
+running build_py
+copying elgooso/state_publisher.py -> /home/majama/ros2_ws/build/elgooso/build/lib/elgooso
+running install
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running install_lib
+copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/state_publisher.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/state_publisher.py to state_publisher.cpython-310.pyc
+running install_data
+copying launch/elgooso_rviz.launch.py -> /home/majama/ros2_ws/install/elgooso/share/elgooso/launch
+copying launch/elgooso_sim.launch.py -> /home/majama/ros2_ws/install/elgooso/share/elgooso/launch
+running install_egg_info
+removing '/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/elgooso/elgooso.egg-info to /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info
+running install_scripts
+Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+writing list of installed files to '/home/majama/ros2_ws/build/elgooso/install.log'

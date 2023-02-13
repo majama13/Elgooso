@@ -1,0 +1,236 @@
+<?xml version='1.0'?>
+<robot xmlns:xacro='http://www.ros.org/wiki/xacro' name='elgooso'>
+
+	<material name='black'>
+		<color rgba='0 0 0 1'/>
+	</material>
+	
+	<material name='silver'>
+		<color rgba='0.82 0.82 0.82 1'/>
+	</material>
+
+	<material name='yellow'>
+		<color rgba='1 1 0 1'/>
+	</material>
+	
+	<material name='white'>
+		<color rgba='1 1 1 1'/>
+	</material>
+	
+	<material name='orange'>
+		<color rgba='1 0.5 0 1'/>
+	</material>
+
+	
+	<xacro:property name = 'x' value = '0.15'/>
+	<xacro:property name = 'y' value = '0.1'/>
+	<xacro:property name = 'z' value = '0.05'/>
+	
+	<!--<link name='base_link'>
+		<visual>
+			<geometry>
+				<box size = '${x} ${y} ${z}' />
+			</geometry>
+			<origin xyz='0 0 0.045'/>
+			<material name='black'/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size = '${x} ${y} ${z}' />
+			</geometry>
+		</collision>
+	</link>-->
+	
+	
+	<link name='body'>
+		<visual>
+			<geometry>
+				<box size = '${x} ${y} ${z}' />
+			</geometry>
+			<material name='black'/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size = '${x} ${y} ${z}' />
+			</geometry>
+			<origin xyz='0 0 0.045'/>
+		</collision>
+		<inertial>
+    		<mass value='0.5'/>
+    		<inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="5e-4" iyz="0.0" izz="1e-3"/>
+  		</inertial>
+	</link>
+	<!--<joint name='base_to_body' type='fixed'>
+   		<parent link='base_link'/>
+    	<child link='body'/>
+    	<origin xyz='0 0 0.045'/>
+  	</joint>-->
+	
+	
+	<link name='neck'>
+		<visual>
+			<geometry>
+				<cylinder radius='0.005' length='0.01'/>
+			</geometry>
+			<origin xyz = '0 0 0.005'/>
+			<material name='black'/>
+		</visual>
+		<inertial>
+    		<mass value='0.01'/>
+    		<inertia ixx="1e-7" ixy="0.0" ixz="0.0" iyy="1e-7" iyz="0.0" izz="1e-7"/>
+  		</inertial>
+	</link>
+	<joint name='body_to_neck' type='revolute'>
+		<axis xyz = '0 0 1'/>
+		<limit effort='1000.0' lower='-0.785398' upper='0.785398' velocity='0.025'/>
+   		<parent link='body'/>
+    	<child link='neck'/>
+    	<origin xyz='0.070 0 0.025'/>
+  	</joint>
+	
+	
+	<link name='head'>
+		<visual>
+			<geometry>
+				<box size = '0.001 0.04 0.02' />
+			</geometry>
+			<origin xyz = '0 0 0.01'/>
+			<material name='orange'/>
+		</visual>
+		<collision>
+			<geometry>
+				<box size = '0.1 0.1 0.1' />
+			</geometry>
+		</collision>
+		<inertial>
+    		<mass value='0.01'/>
+    		<inertia ixx="1e-6" ixy="0.0" ixz="0.0" iyy="1e-6" iyz="0.0" izz="1e-7"/>
+  		</inertial>
+	</link>
+	<joint name='neck_to_head' type='fixed'>
+    	<parent link='neck'/>
+    	<child link='head'/>
+    	<origin xyz='0 0 0.01'/>
+  	</joint>
+  	
+  	<!--
+  	<joint name='sensor_joint' type = 'fixed'>
+  		<parent link = 'head'/>
+  		<child link = 'sonar'/>
+  	</joint>
+  	-->
+  	
+  	<gazebo reference='head'>
+  		<sensor name='sonar' type='gpu_lidar'>
+			<pose relative_to='head'>0.01 0 0 0 0 0</pose>
+			<topic>sonar</topic>
+			<update_rate>5</update_rate>
+			<ray>
+				<scan>
+					<horizontal>
+						<samples>5</samples>
+						<resolution>1.0</resolution>
+						<min_angle>-0.25</min_angle>
+						<max_angle>0.25</max_angle>
+					</horizontal>
+					<vertical>
+						<samples>1</samples>
+						<resolution>1.0</resolution>
+						<min_angle>0.25</min_angle>
+						<max_angle>0.25</max_angle>
+					</vertical>
+				</scan>
+				<range>
+					<min>0.08</min>
+					<max>3.0</max>
+					<resolution>0.01</resolution>
+				</range>
+			</ray>
+			<always_on>1</always_on>
+			<visualize>true</visualize>
+			<plugin
+				filename="libgz-sim-sensors-system.so"
+				name="gz::sim::systems::Sensors">
+				<render_engine>ogre2</render_engine>
+			</plugin>
+		</sensor>
+	</gazebo>
+	
+	<xacro:macro name='ear' params='prefix reflect'>
+		<link name='${prefix}_ear'>
+			<visual>
+				<geometry>
+					<cylinder radius = '0.005' length = '0.01' />
+				</geometry>
+				<origin rpy = '0 1.5708 0' xyz = '0.005 0 0'/>
+				<material name='silver'/>
+			</visual>
+			<inertial>
+				<mass value='0.01'/>
+				<inertia ixx="1e-7" ixy="0.0" ixz="0.0" iyy="1e-7" iyz="0.0" izz="1e-7"/>
+	  		</inertial>
+		</link>
+		
+		<joint name='head_to_${prefix}_ear' type='fixed'>
+			<parent link='head'/>
+			<child link='${prefix}_ear'/>
+		  	<origin xyz='0 ${reflect*0.006} 0.01'/>
+		</joint>
+	</xacro:macro>
+	
+	<xacro:ear prefix='right' reflect='1'/>
+	<xacro:ear prefix='left' reflect='-1'/>
+	
+	<xacro:property name='wheel_radius' value='0.035'/>
+	<xacro:property name='wheel_width' value='0.02'/>
+	
+  	<xacro:macro name='wheel' params='prefix reflect offset'>
+		<link name='${prefix}_wheel'>
+			<visual>
+				<geometry>
+					<cylinder radius = '${wheel_radius}' length='${wheel_width}'/>
+				</geometry>
+				<origin rpy  = '-1.5708 0 0' xyz = '0 0 0'/>
+				<material name='yellow'/>
+			</visual>
+			<collision>
+				<geometry>
+					<cylinder radius = '${wheel_radius}' length='${wheel_width}'/>
+				</geometry>
+				<origin rpy  = '-1.5708 0 0' xyz = '0 0 0'/>
+			</collision>
+			<inertial>
+			  	<mass value='0.1'/>
+			  	<inertia ixx="5e-5" ixy="0.0" ixz="0.0" iyy="5e-5" iyz="0.0" izz="9.2e-5"/>
+			  	<origin rpy  = '-1.5708 0 0' xyz = '0 0 0'/>
+			</inertial>
+		</link>
+		<joint name='body_to_${prefix}_wheel' type='revolute'>
+			<parent link='body'/>
+			<child link='${prefix}_wheel'/>
+			<origin xyz='${offset*(x/2-wheel_radius)} ${reflect*(y/2+wheel_width/2)} -${(2*wheel_radius-z)/2}'/>
+		  	<axis xyz = '0 1 0'/>
+		  	<limit effort='1000.0' lower='-1.79769e+308' upper='1.79769e+308' velocity='10.0'/>
+		</joint>
+	</xacro:macro>
+	
+	<xacro:wheel prefix='left_front' reflect='1' offset='1'/>
+	<xacro:wheel prefix='right_front' reflect='-1' offset='1'/>
+	<xacro:wheel prefix='left_back' reflect='1' offset='-1'/>
+	<xacro:wheel prefix='right_back' reflect='-1' offset='-1'/>
+
+	<gazebo>
+		<plugin
+			filename="libgz-sim-diff-drive-system"
+			name="gz::sim::systems::DiffDrive">
+			<left_joint>body_to_left_front_wheel</left_joint>
+			<left_joint>body_to_left_back_wheel</left_joint>
+			<right_joint>body_to_right_front_wheel</right_joint>
+			<right_joint>body_to_right_back_wheel</right_joint>
+			<wheel_separation>0.1</wheel_separation>
+			<wheel_radius>0.035</wheel_radius>
+			<!--<odom_publish_frequency>1</odom_publish_frequency>
+			<topic>cmd_vel</topic>-->
+		</plugin>
+	</gazebo>
+</robot>

@@ -1,0 +1,1 @@
+/home/majama/ros2_ws/src/elgooso/launch/elgooso_rviz.launch.py

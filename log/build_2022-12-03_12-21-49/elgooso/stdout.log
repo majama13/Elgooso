@@ -1,0 +1,21 @@
+running develop
+running egg_info
+writing ../../build/elgooso/elgooso.egg-info/PKG-INFO
+writing dependency_links to ../../build/elgooso/elgooso.egg-info/dependency_links.txt
+writing entry points to ../../build/elgooso/elgooso.egg-info/entry_points.txt
+writing requirements to ../../build/elgooso/elgooso.egg-info/requires.txt
+writing top-level names to ../../build/elgooso/elgooso.egg-info/top_level.txt
+reading manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+writing manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying package.xml -> /home/majama/ros2_ws/install/elgooso/share/elgooso
+running install_egg_info
+removing '/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/elgooso/elgooso.egg-info to /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info
+running install_scripts
+Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+writing list of installed files to '/home/majama/ros2_ws/build/elgooso/install.log'

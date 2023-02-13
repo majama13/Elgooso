@@ -1,0 +1,6 @@
+<?xml version='1.0'?>
+<ignition version='1.0'>
+  <executable name='wall-world'>
+    <command>ign gazebo /home/majama/ros2_ws/src/elgooso/worlds/wall.world</command>
+  </executable>
+</ignition>

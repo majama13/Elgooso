@@ -1,0 +1,26 @@
+[1.263s] Invoking command in '/home/majama/ros2_ws/build/elgooso': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/majama/ros2_ws/build/elgooso/build --no-deps install_data
+[1.791s] running develop
+[1.794s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.794s]   warnings.warn(
+[1.799s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.799s]   warnings.warn(
+[1.901s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[1.901s]   warnings.warn(
+[1.901s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[1.902s]   warnings.warn(
+[2.081s] running egg_info
+[2.082s] writing elgooso.egg-info/PKG-INFO
+[2.082s] writing dependency_links to elgooso.egg-info/dependency_links.txt
+[2.082s] writing entry points to elgooso.egg-info/entry_points.txt
+[2.083s] writing requirements to elgooso.egg-info/requires.txt
+[2.083s] writing top-level names to elgooso.egg-info/top_level.txt
+[2.087s] reading manifest file 'elgooso.egg-info/SOURCES.txt'
+[2.099s] writing manifest file 'elgooso.egg-info/SOURCES.txt'
+[2.102s] running build_ext
+[2.102s] Creating /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso.egg-link (link to .)
+[2.107s] Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+[2.107s] 
+[2.108s] Installed /home/majama/ros2_ws/build/elgooso
+[2.108s] running install_data
+[2.108s] copying launch/elgooso_move_test.launch.py -> /home/majama/ros2_ws/install/elgooso/share/elgooso/launch
+[2.173s] Invoked command in '/home/majama/ros2_ws/build/elgooso' returned '0': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/majama/ros2_ws/build/elgooso/build --no-deps install_data

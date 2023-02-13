@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo -e "World file name:"
+read world
+
+ign gazebo elgooso /home/majama/ros2_ws/src/elgooso/worlds/$world.world
+

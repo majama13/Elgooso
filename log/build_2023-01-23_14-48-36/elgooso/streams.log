@@ -1,0 +1,46 @@
+[0.756s] Invoking command in '/home/majama/ros2_ws/build/elgooso': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/majama/ros2_ws/build/elgooso/build
+[1.090s] running develop
+[1.093s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.094s]   warnings.warn(
+[1.102s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.102s]   warnings.warn(
+[1.224s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[1.224s]   warnings.warn(
+[1.225s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[1.225s]   warnings.warn(
+[1.442s] Invoked command in '/home/majama/ros2_ws/build/elgooso' returned '0': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/majama/ros2_ws/build/elgooso/build
+[1.444s] Invoking command in '/home/majama/ros2_ws/src/elgooso': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elgooso build --build-base /home/majama/ros2_ws/build/elgooso/build install --record /home/majama/ros2_ws/build/elgooso/install.log --single-version-externally-managed
+[1.792s] running egg_info
+[1.793s] writing ../../build/elgooso/elgooso.egg-info/PKG-INFO
+[1.804s] writing dependency_links to ../../build/elgooso/elgooso.egg-info/dependency_links.txt
+[1.804s] writing entry points to ../../build/elgooso/elgooso.egg-info/entry_points.txt
+[1.805s] writing requirements to ../../build/elgooso/elgooso.egg-info/requires.txt
+[1.805s] writing top-level names to ../../build/elgooso/elgooso.egg-info/top_level.txt
+[1.810s] reading manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+[1.812s] writing manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+[1.812s] running build
+[1.812s] running build_py
+[1.815s] copying elgooso/Qlearn.py -> /home/majama/ros2_ws/build/elgooso/build/lib/elgooso
+[1.815s] running install
+[1.816s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.816s]   warnings.warn(
+[1.816s] running install_lib
+[1.818s] copying /home/majama/ros2_ws/build/elgooso/build/lib/elgooso/Qlearn.py -> /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso
+[1.820s] byte-compiling /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/Qlearn.py to Qlearn.cpython-310.pyc
+[1.822s]   File "/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso/Qlearn.py", line 105
+[1.823s]     		reward = #=(current x value minus x at time t)/(robot vel * time between state rdgs)
+[1.823s]     		         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.823s] SyntaxError: invalid syntax
+[1.823s] 
+[1.823s] running install_data
+[1.829s] copying worlds/world_demo.xacro -> /home/majama/ros2_ws/install/elgooso/share/elgooso/worlds
+[1.830s] running install_egg_info
+[1.832s] removing '/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info' (and everything under it)
+[1.833s] Copying ../../build/elgooso/elgooso.egg-info to /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info
+[1.835s] running install_scripts
+[1.873s] Installing Qlearn script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+[1.874s] Installing move script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+[1.875s] Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+[1.875s] Installing talker script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+[1.876s] writing list of installed files to '/home/majama/ros2_ws/build/elgooso/install.log'
+[1.913s] Invoked command in '/home/majama/ros2_ws/src/elgooso' returned '0': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elgooso build --build-base /home/majama/ros2_ws/build/elgooso/build install --record /home/majama/ros2_ws/build/elgooso/install.log --single-version-externally-managed

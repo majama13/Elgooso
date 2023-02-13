@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing elgooso.egg-info/PKG-INFO
+writing dependency_links to elgooso.egg-info/dependency_links.txt
+writing entry points to elgooso.egg-info/entry_points.txt
+writing requirements to elgooso.egg-info/requires.txt
+writing top-level names to elgooso.egg-info/top_level.txt
+reading manifest file 'elgooso.egg-info/SOURCES.txt'
+writing manifest file 'elgooso.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso.egg-link (link to .)
+
+Installed /home/majama/ros2_ws/build/elgooso
+running install_data
+copying urdf/elgooso.urdf -> /home/majama/ros2_ws/install/elgooso/share/elgooso/urdf

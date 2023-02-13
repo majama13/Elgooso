@@ -1,0 +1,35 @@
+[1.272s] Invoking command in '/home/majama/ros2_ws/build/elgooso': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/majama/ros2_ws/build/elgooso/build
+[1.635s] running develop
+[1.647s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[1.647s]   warnings.warn(
+[1.650s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.650s]   warnings.warn(
+[1.750s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[1.750s]   warnings.warn(
+[1.751s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[1.751s]   warnings.warn(
+[1.943s] Invoked command in '/home/majama/ros2_ws/build/elgooso' returned '0': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/majama/ros2_ws/build/elgooso/build
+[1.944s] Invoking command in '/home/majama/ros2_ws/src/elgooso': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elgooso build --build-base /home/majama/ros2_ws/build/elgooso/build install --record /home/majama/ros2_ws/build/elgooso/install.log --single-version-externally-managed
+[2.310s] running egg_info
+[2.311s] writing ../../build/elgooso/elgooso.egg-info/PKG-INFO
+[2.312s] writing dependency_links to ../../build/elgooso/elgooso.egg-info/dependency_links.txt
+[2.312s] writing entry points to ../../build/elgooso/elgooso.egg-info/entry_points.txt
+[2.312s] writing requirements to ../../build/elgooso/elgooso.egg-info/requires.txt
+[2.313s] writing top-level names to ../../build/elgooso/elgooso.egg-info/top_level.txt
+[2.318s] reading manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+[2.320s] writing manifest file '../../build/elgooso/elgooso.egg-info/SOURCES.txt'
+[2.320s] running build
+[2.320s] running build_py
+[2.320s] running install
+[2.321s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.321s]   warnings.warn(
+[2.321s] running install_lib
+[2.324s] running install_data
+[2.325s] copying worlds/elgooso.world -> /home/majama/ros2_ws/install/elgooso/share/elgooso/worlds
+[2.326s] running install_egg_info
+[2.328s] removing '/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info' (and everything under it)
+[2.328s] Copying ../../build/elgooso/elgooso.egg-info to /home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages/elgooso-0.0.0-py3.10.egg-info
+[2.330s] running install_scripts
+[2.361s] Installing state_publisher script to /home/majama/ros2_ws/install/elgooso/lib/elgooso
+[2.361s] writing list of installed files to '/home/majama/ros2_ws/build/elgooso/install.log'
+[2.403s] Invoked command in '/home/majama/ros2_ws/src/elgooso' returned '0': PYTHONPATH=/home/majama/ros2_ws/build/elgooso/prefix_override:/home/majama/ros2_ws/install/elgooso/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/elgooso build --build-base /home/majama/ros2_ws/build/elgooso/build install --record /home/majama/ros2_ws/build/elgooso/install.log --single-version-externally-managed
